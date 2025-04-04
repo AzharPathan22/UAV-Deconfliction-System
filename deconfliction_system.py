@@ -259,24 +259,24 @@ def get_simulated_missions():
 
     # Simulated Mission for Drone2
     mission2 = Mission("Drone2")
-    mission2.add_waypoint(Waypoint(200, 100, 15, datetime(2024, 1, 1, 10, 0, 30)))
-    mission2.add_waypoint(Waypoint(100, 100, 15, datetime(2024, 1, 1, 10, 1, 0)))  # Conflict expected with primary mission
-    mission2.add_waypoint(Waypoint(0, 100, 15, datetime(2024, 1, 1, 10, 2, 0)))
-    mission2.add_waypoint(Waypoint(100, 100, 15, datetime(2024, 1, 1, 10, 3, 0)))
+    mission2.add_waypoint(Waypoint(200, 100, 15, datetime(2025, 4, 2, 10, 0, 30)))
+    mission2.add_waypoint(Waypoint(100, 100, 15, datetime(2025, 4, 2, 10, 1, 0)))  # Conflict expected with primary mission
+    mission2.add_waypoint(Waypoint(0, 100, 15, datetime(2025, 4, 2, 10, 2, 0)))
+    mission2.add_waypoint(Waypoint(100, 100, 15, datetime(2025, 4, 2, 10, 3, 0)))
     simulated_missions.append(mission2)
 
     # Simulated Mission for Drone3
     mission3 = Mission("Drone3")
-    mission3.add_waypoint(Waypoint(50, 0, 12, datetime(2024, 1, 1, 10, 0, 0)))
-    mission3.add_waypoint(Waypoint(50, 150, 12, datetime(2024, 1, 1, 10, 2, 0)))
-    mission3.add_waypoint(Waypoint(150, 150, 12, datetime(2024, 1, 1, 10, 4, 0)))
+    mission3.add_waypoint(Waypoint(50, 0, 12, datetime(2025, 4, 2, 10, 0, 0)))
+    mission3.add_waypoint(Waypoint(50, 150, 12, datetime(2025, 4, 2, 10, 2, 0)))
+    mission3.add_waypoint(Waypoint(150, 150, 12, datetime(2025, 4, 2, 10, 4, 0)))
     simulated_missions.append(mission3)
 
     # Simulated Mission for Drone4
     mission4 = Mission("Drone4")
-    mission4.add_waypoint(Waypoint(0, 200, 20, datetime(2024, 1, 1, 10, 1, 0)))
-    mission4.add_waypoint(Waypoint(100, 200, 20, datetime(2024, 1, 1, 10, 3, 0)))
-    mission4.add_waypoint(Waypoint(200, 200, 20, datetime(2024, 1, 1, 10, 5, 0)))
+    mission4.add_waypoint(Waypoint(0, 200, 20, datetime(2025, 4, 2, 10, 1, 0)))
+    mission4.add_waypoint(Waypoint(100, 200, 20, datetime(2025, 4, 2, 10, 3, 0)))
+    mission4.add_waypoint(Waypoint(200, 200, 20, datetime(2025, 4, 2, 10, 5, 0)))
     simulated_missions.append(mission4)
 
     return simulated_missions
@@ -329,8 +329,8 @@ def run_basic_tests():
     assert math.isclose(calculate_distance(p1, p2), 5.0), "Distance calculation error"
     
     # Test interpolation function
-    t1 = datetime(2024, 1, 1, 10, 0, 0)
-    t2 = datetime(2024, 1, 1, 10, 10, 0)
+    t1 = datetime(2025, 4, 2, 10, 0, 0)
+    t2 = datetime(2025, 4, 2, 10, 10, 0)
     wp_a = Waypoint(0, 0, 0, t1)
     wp_b = Waypoint(10, 10, 10, t2)
     mid_time = t1 + (t2 - t1) / 2
