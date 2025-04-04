@@ -18,8 +18,8 @@ This project implements a strategic deconfliction system for UAV missions. It ch
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/uav-deconfliction-system.git
-   cd uav-deconfliction-system
+   git clone https://github.com/AzharPathan22/UAV-Deconfliction-System.git
+   cd UAV-Deconfliction-System
 
 2. **Create and Activate a Virtual Environment (Optional but Recommended):**
 
@@ -33,6 +33,7 @@ This project implements a strategic deconfliction system for UAV missions. It ch
 
 3. **Install Dependencies: Install the required Python libraries using pip:**
 
+    ```bash
     pip install matplotlib
 
 
